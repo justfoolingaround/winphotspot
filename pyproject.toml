@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "winphotspot"
+version = "0.1.0"
+description = "Windows Portable Hotspot API for Windows 10 and 11."
+authors = ["justfoolingaround <kr.justfoolingaround@gmail.com>"]
+license = "GPTv3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+winsdk = "^1.0.0b10"
+rich = "^13.6.0"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+hotspot = "winphotspot.__main__:main"
