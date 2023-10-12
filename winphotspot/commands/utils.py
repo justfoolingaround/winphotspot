@@ -17,7 +17,7 @@ def rich_print_hotspot(console: "rich.Console", hotspot: Hotspot):
     )
 
     console.print(
-        f"[bold {color}]{hotspot.ssid}[/bold {color}] [dim]{band}, sharing over {hotspot.network_profile.profile_name}[/dim]"
+        f"[bold {color}]{hotspot.ssid}[/bold {color}] [dim]{band}, sharing from {hotspot.network_profile.profile_name}[/dim]"
     )
     console.print(f"passwd: {hotspot.password!r}")
 
